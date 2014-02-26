@@ -1,0 +1,11 @@
+<h1>WeatherTokyo</h1>
+<h2>The weather in <%= @city %>, <%= @country %> is ...</h2>
+
+<div id="conditions">
+	<p><%= @text_condition %>, <%= @temperature %>&deg;C</p>
+	<%= image_tag("cloud.svg", :id => "weather_icon") %>
+</div>
+<div id="astronomy">
+	<p>Sunrise: <%= @sunrise %></p>
+	<p>Sunset: <%= @sunset %></p>
+</div>

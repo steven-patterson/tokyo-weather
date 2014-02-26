@@ -1,0 +1,28 @@
+// Place all the styles related to the Weather controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	color: coral;
+}
+
+p {
+	margin: 0.4em;
+}
+
+#weather_icon {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	height: 250px;
+	width: 250px;
+}
+
+#conditions {
+	margin-top: 2em;
+	font-size: 2em;
+}
+
+#astronomy {
+	font-size: 2em;
+}
