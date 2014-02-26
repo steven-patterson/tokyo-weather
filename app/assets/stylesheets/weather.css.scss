@@ -1,13 +1,40 @@
 // Place all the styles related to the Weather controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$max-width: em(960);
+
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container {
+	@include outer-container;
+}
+
+.weather_box {
+	@include span-columns(4);
+	@include shift(4);
+	text-align: center;
+}
+
+body {
+	background-color: #343838;
+}
 
 h1 {
-	color: coral;
+	margin-top: 5%;
+	text-align: center;
+	color: #00DFFC;
 }
 
 p {
 	margin: 0.4em;
+	color: #FFF;
 }
 
 #weather_icon {
