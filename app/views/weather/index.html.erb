@@ -1,5 +1,3 @@
-<h1 class="site_header">東京 WeatherTokyo</h1>
-
 <div class="weather_box">
 	<div class="top_bar">
 		<div class="conditions">
@@ -9,16 +7,17 @@
 		</p>
 		</div>
 		<div class="weather_icon">
-			<%= image_tag("cloud.svg") %>
+			<%= image_tag("cloud-moon.svg") %>
 		</div>
 	</div>
 	<div class="bottom_bar">
 		<div class="astronomy">
+			<%= image_tag("moon.svg") %>
 			<p>Sunrise <%= @sunrise %></p>
 			<p>Sunset <%= @sunset %></p>
 		</div>
 		<div class="wind">
-			<%= image_tag("compass.svg") %>
+			<%= image_tag("wind.svg") %>
 			<p>Wind</p>
 			<p><%= @wind_speed %> km/h</p>
 		</div>

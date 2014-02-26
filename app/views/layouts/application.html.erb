@@ -6,9 +6,16 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<div class="container">
 <body>
-<%= yield %>
-</body>
+<div class="navbar">
+	<h1 class="site_header">東京 WeatherTokyo
+		<span class="clock">
+			<%= @tokyo_time %>
+		</span>
+	</h1>
 </div>
+<div class="container">
+	<%= yield %>
+</div>
+</body>
 </html>

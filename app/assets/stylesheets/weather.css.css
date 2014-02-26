@@ -10,17 +10,27 @@ html {
   height: 100%; }
 
 body {
-  background-color: #343838; }
-
-.site_header {
-  margin-top: 5%;
-  margin-bottom: 3%;
-  text-align: center;
-  color: #00DFFC; }
+  background-color: #343838;
+  margin: 0; }
 
 p {
   margin: 0.4em;
   color: #FFF; }
+
+.navbar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 10px 5%;
+  margin-bottom: 5%;
+  background-color: #656d6d;
+  color: #00DFFC; }
+  .navbar:last-child {
+    margin-right: 0; }
+  .navbar .clock {
+    font-size: 0.8em;
+    float: right; }
 
 .container {
   *zoom: 1;
@@ -58,9 +68,9 @@ p {
   .conditions:last-child {
     margin-right: 0; }
   .conditions img {
+    float: left;
     width: 50px;
-    height: 100px;
-    float: left; }
+    height: 100px; }
   .conditions p {
     padding-top: 0.5em;
     text-align: left; }
@@ -71,9 +81,9 @@ p {
   margin-right: 2.35765%;
   width: 31.76157%;
   margin-left: 34.11922%;
-  padding-left: 30px;
   display: block;
-  clear: both; }
+  clear: both;
+  padding-left: 30px; }
   .weather_icon:last-child {
     margin-right: 0; }
 
@@ -82,14 +92,27 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 50px;
+  margin-left: 34.11922%;
   display: block;
-  clear: both; }
+  clear: both;
+  margin-left: 110px; }
   .bottom_bar:last-child {
     margin-right: 0; }
 
 .astronomy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: -25.58941%;
   float: left; }
+  .astronomy:last-child {
+    margin-right: 0; }
+  .astronomy img {
+    display: inline;
+    float: left;
+    width: 100px;
+    height: 100px; }
 
 .wind {
   float: left;
@@ -103,7 +126,7 @@ p {
   .wind > p {
     text-align: left; }
   .wind img {
-    float: left;
     display: inline;
+    float: left;
     width: 100px;
     height: 100px; }

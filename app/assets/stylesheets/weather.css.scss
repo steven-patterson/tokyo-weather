@@ -15,18 +15,24 @@ html {
 
 body {
 	background-color: #343838;
-}
-
-.site_header {
-	margin-top: 5%;
-	margin-bottom: 3%;
-	text-align: center;
-	color: #00DFFC;
+	margin: 0;
 }
 
 p {
 	margin: 0.4em;
 	color: #FFF;
+}
+
+.navbar {
+	@include span-columns(12);
+	padding: 10px 5%;
+	margin-bottom: 5%;
+	background-color: lighten(#343838, 20);
+	color: #00DFFC;
+	.clock {
+		font-size: 0.8em;
+		float: right;
+	}
 }
 
 .container {
@@ -51,9 +57,9 @@ p {
 	@include shift(4);
 
 	img {
+		float: left;
 		width: 50px;
 		height: 100px;
-		float: left;
 	}
 	p {
 		padding-top: 0.5em;
@@ -64,20 +70,29 @@ p {
 .weather_icon {
 	@include span-columns(4);
 	@include shift(4);
-	padding-left: 30px;
 	display: block;
 	clear: both;
+	padding-left: 30px;
 }
 
 .bottom_bar {
 	@include span-columns(10);
-	margin-left: 50px;
+	@include shift(4);
 	display: block;
 	clear: both;
+	margin-left: 110px;
 }
 
 .astronomy {
+	@include span-columns(7);
+	@include shift(-3);
 	float: left;
+	img {
+		display: inline;
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .wind {
@@ -88,8 +103,8 @@ p {
 		text-align: left;
 	}
 	img {
-		float: left;
 		display: inline;
+		float: left;
 		width: 100px;
 		height: 100px;
 	}

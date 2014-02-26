@@ -16,5 +16,9 @@ class WeatherController < ApplicationController
 
 		wind = response.wind
 		@wind_speed = wind["speed"]
+
+		Time.zone = "Tokyo"
+		@tokyo_time = Time.zone.now.strftime("%I:%M %p")
+
 	end
 end
