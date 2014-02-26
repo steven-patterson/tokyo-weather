@@ -1,12 +1,26 @@
-<h1>東京 WeatherTokyo</h1>
+<h1 class="site_header">東京 WeatherTokyo</h1>
 
 <div class="weather_box">
-	<div id="conditions">
-		<p><%= @temperature %>&deg;C, <%= @text_condition %></p>
-		<%= image_tag("cloud.svg", :id => "weather_icon") %>
+	<div class="top_bar">
+		<div class="conditions">
+		<%= image_tag("therm-50.svg") %>
+		<p>
+			<%= @temperature %>&deg;C, <%= @text_condition %>
+		</p>
+		</div>
+		<div class="weather_icon">
+			<%= image_tag("cloud.svg") %>
+		</div>
 	</div>
-	<div id="astronomy">
-		<p>Sunrise: <%= @sunrise %></p>
-		<p>Sunset: <%= @sunset %></p>
+	<div class="bottom_bar">
+		<div class="astronomy">
+			<p>Sunrise <%= @sunrise %></p>
+			<p>Sunset <%= @sunset %></p>
+		</div>
+		<div class="wind">
+			<%= image_tag("compass.svg") %>
+			<p>Wind</p>
+			<p><%= @wind_speed %> km/h</p>
+		</div>
 	</div>
 </div>

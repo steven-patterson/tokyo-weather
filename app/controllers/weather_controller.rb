@@ -10,11 +10,11 @@ class WeatherController < ApplicationController
 		@text_condition = condition["text"]
 		@temperature = condition["temp"]
 
-		@description_image = response.description_image
-		@description_text = response.parsed_description
-
 		astronomy = response.astronomy
 		@sunrise = astronomy["sunrise"]
 		@sunset = astronomy["sunset"]
+
+		wind = response.wind
+		@wind_speed = wind["speed"]
 	end
 end

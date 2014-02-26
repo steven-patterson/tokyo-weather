@@ -10,24 +10,16 @@ html {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-}
-
-.container {
-	@include outer-container;
-}
-
-.weather_box {
-	@include span-columns(4);
-	@include shift(4);
-	text-align: center;
+	height: 100%;
 }
 
 body {
 	background-color: #343838;
 }
 
-h1 {
+.site_header {
 	margin-top: 5%;
+	margin-bottom: 3%;
 	text-align: center;
 	color: #00DFFC;
 }
@@ -37,19 +29,67 @@ p {
 	color: #FFF;
 }
 
-#weather_icon {
-	margin: 0;
-	padding: 0;
+.container {
+	@include outer-container;
+}
+
+.weather_box {
+	@include span-columns(10);
+	@include shift(2);
+	text-align: center;
+	font-size: 2em;
+}
+
+.top_bar {
+	@include shift(-3);
+	display: block;
+	clear: both;
+}
+
+.conditions {
+	@include span-columns(6);
+	@include shift(4);
+
+	img {
+		width: 50px;
+		height: 100px;
+		float: left;
+	}
+	p {
+		padding-top: 0.5em;
+		text-align: left;
+	}
+}
+
+.weather_icon {
+	@include span-columns(4);
+	@include shift(4);
+	display: block;
+	clear: both;
+}
+
+.bottom_bar {
+	@include span-columns(10);
+	margin-left: 50px;
+	display: block;
+	clear: both;
+}
+
+.astronomy {
+	float: left;
+}
+
+.wind {
+	@include span-columns(6);
 	display: inline;
-	height: 250px;
-	width: 250px;
-}
-
-#conditions {
-	margin-top: 2em;
-	font-size: 2em;
-}
-
-#astronomy {
-	font-size: 2em;
+	float: left;
+	> p {
+		text-align: left;
+	}
+	img {
+		float: left;
+		display: inline;
+		width: 100px;
+		height: 100px;
+	}
 }

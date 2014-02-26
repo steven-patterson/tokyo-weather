@@ -6,7 +6,21 @@
 html {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: #343838; }
+
+.site_header {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: #00DFFC; }
+
+p {
+  margin: 0.4em;
+  color: #FFF; }
 
 .container {
   *zoom: 1;
@@ -23,34 +37,72 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-left: 34.11922%;
-  text-align: center; }
+  width: 82.94039%;
+  margin-left: 17.05961%;
+  text-align: center;
+  font-size: 2em; }
   .weather_box:last-child {
     margin-right: 0; }
 
-body {
-  background-color: #343838; }
+.top_bar {
+  margin-left: -25.58941%;
+  display: block;
+  clear: both; }
 
-h1 {
-  margin-top: 5%;
-  text-align: center;
-  color: #00DFFC; }
+.conditions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 34.11922%; }
+  .conditions:last-child {
+    margin-right: 0; }
+  .conditions img {
+    width: 50px;
+    height: 100px;
+    float: left; }
+  .conditions p {
+    padding-top: 0.5em;
+    text-align: left; }
 
-p {
-  margin: 0.4em;
-  color: #FFF; }
+.weather_icon {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  display: block;
+  clear: both; }
+  .weather_icon:last-child {
+    margin-right: 0; }
 
-#weather_icon {
-  margin: 0;
-  padding: 0;
+.bottom_bar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 50px;
+  display: block;
+  clear: both; }
+  .bottom_bar:last-child {
+    margin-right: 0; }
+
+.astronomy {
+  float: left; }
+
+.wind {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
   display: inline;
-  height: 250px;
-  width: 250px; }
-
-#conditions {
-  margin-top: 2em;
-  font-size: 2em; }
-
-#astronomy {
-  font-size: 2em; }
+  float: left; }
+  .wind:last-child {
+    margin-right: 0; }
+  .wind > p {
+    text-align: left; }
+  .wind img {
+    float: left;
+    display: inline;
+    width: 100px;
+    height: 100px; }
