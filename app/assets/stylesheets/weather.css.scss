@@ -64,6 +64,7 @@ p {
 .weather_icon {
 	@include span-columns(4);
 	@include shift(4);
+	padding-left: 30px;
 	display: block;
 	clear: both;
 }
