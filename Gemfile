@@ -38,9 +38,10 @@ group :design do
 	gem "bitters"
 end
 
-
-gem 'sqlite3'
-
+group :development do
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
+end
 
 group :production do
   gem 'pg'
