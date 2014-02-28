@@ -40,13 +40,12 @@ end
 
 gem "yahoo_weatherman"
 
-group :development, :test do
-  gem 'sqlite3'
+group :production, :staging do
+  gem "pg"
 end
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
 end
 
 # Use ActiveModel has_secure_password
