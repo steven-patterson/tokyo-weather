@@ -38,13 +38,17 @@ group :design do
 	gem "bitters"
 end
 
+gem "yahoo_weatherman"
 
+group :development do
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
+end
 
+group :production do
   gem 'pg'
   gem 'rails_12factor'
-
-
-gem "yahoo_weatherman"
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
