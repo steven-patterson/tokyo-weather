@@ -4,17 +4,6 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?gntv0u');
-	src:url('fonts/icomoon.eot?#iefixgntv0u') format('embedded-opentype'),
-		url('fonts/icomoon.woff?gntv0u') format('woff'),
-		url('fonts/icomoon.ttf?gntv0u') format('truetype'),
-		url('fonts/icomoon.svg?gntv0u#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 $max-width: em(960);
 
 html {
@@ -98,6 +87,7 @@ p {
 	@include span-columns(7);
 	@include shift(-3);
 	float: left;
+	text-align: left;
 	img {
 		display: inline;
 		float: left;
