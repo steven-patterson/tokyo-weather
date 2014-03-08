@@ -161,6 +161,7 @@ p {
   .instagram_bar:last-child {
     margin-right: 0; }
   .instagram_bar img {
+    border: 2px solid white;
     float: left;
     height: 25%;
     width: 25%; }
