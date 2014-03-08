@@ -25,7 +25,9 @@
 	<p>How's life in Tokyo?</p>
 	<br>
 		<% @instagram.take(8).each do |instagram| %>
-			<%= image_tag instagram.images.standard_resolution.url %>
+			<%= link_to instagram.images.standard_resolution.url do %>
+				<%= image_tag instagram.images.standard_resolution.url %>
+			<% end %>
 		<% end %>
 	</div>
 </div>
