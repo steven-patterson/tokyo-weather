@@ -151,7 +151,9 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  padding-top: 5%; }
+  border-top: 5px solid #00DFFC;
+  padding-top: 3%;
+  margin-top: 3%; }
   .instagram_bar:last-child {
     margin-right: 0; }
   .instagram_bar img {

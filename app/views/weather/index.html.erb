@@ -22,6 +22,8 @@
 		</div>
 	</div>
 	<div class="instagram_bar">
+	<p>How's life in Tokyo?</p>
+	<br>
 		<% @instagram.each do |instagram| %>
 			<%= image_tag instagram.images.standard_resolution.url %>
 		<% end %>
