@@ -5,6 +5,8 @@ class WeatherController < ApplicationController
 
 		Time.zone = "Tokyo"
 		@tokyo_time = Time.zone.now.strftime("%I:%M %p")
+
+		# Convert to 24 hour time for sunrise/sunset icon selection
 		tokyo_time_ampm = Time.zone.now.strftime("%p")
 		if tokyo_time_ampm == "PM" && @tokyo_time.to_i != 12
 			@tokyo_time_24 = @tokyo_time.to_i + 12
@@ -22,15 +24,14 @@ class WeatherController < ApplicationController
 		astronomy = response.astronomy
 		@sunrise = astronomy["sunrise"]
 		@sunset = astronomy["sunset"]
-
+		# Check if it's before or after sunset, change icon accordingly
 		if @tokyo_time_24 >= @sunrise.to_i && @tokyo_time_24 < (@sunset.to_i+12)
-			@astro_icon = "sun-lower.svg"
+			@astro_icon = "sun-low.svg"
 		else
 			@astro_icon = "moon.svg"
 		end
 
 		wind = response.wind
 		@wind_speed = wind["speed"]
-
 	end
 end
