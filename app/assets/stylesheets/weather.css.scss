@@ -127,3 +127,12 @@ p {
 		height: 100px;
 	}
 }
+
+.instagram_bar {
+	@include span-columns(10);
+	img {
+		float: left;
+		height: 20%;
+		width: 20%;
+	}
+}

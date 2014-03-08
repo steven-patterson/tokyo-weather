@@ -21,5 +21,9 @@
 			<p><%= @wind_speed %> km/h</p>
 		</div>
 	</div>
-	<p><%= @instagram %></p>
+	<div class="instagram_bar">
+		<% @instagram.each do |instagram| %>
+			<%= image_tag instagram.images.standard_resolution.url %>
+		<% end %>
+	</div>
 </div>
