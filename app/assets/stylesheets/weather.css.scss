@@ -29,26 +29,27 @@ p {
 
 .navbar {
 	@include span-columns(12);
-	padding: 10px 5%;
-	margin-bottom: 2%;
+	padding: 10px 0;
+	margin: 0 0 2% 0;
 	background-color: lighten(#343838, 20);
 	color: #00DFFC;
-}
-
-.site_header {
-	@include span-columns(10);
-	@include shift(1);
-}
-
-.clock {
-	font-size: 0.8em;
-	float: right;
+	.site_header {
+		@include span-columns(8);
+		@include shift(2);
+		padding: 0 2em;
+		.japan_time {
+			font-size: 0.7em;
+			float: right;
+		}
+	}
 }
 
 /* Weather box styles */
 
 .container {
 	@include outer-container;
+	width: 100%;
+	max-width: $max-width;
 }
 
 .weather_box {
@@ -62,7 +63,7 @@ p {
 /* Top half styles */
 
 .top_bar {
-	@include shift(-3);
+	@include shift(-2.55);
 	display: block;
 	clear: both;
 }

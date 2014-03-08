@@ -24,32 +24,33 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 10px 5%;
-  margin-bottom: 2%;
+  padding: 10px 0;
+  margin: 0 0 2% 0;
   background-color: #656d6d;
   color: #00DFFC; }
   .navbar:last-child {
     margin-right: 0; }
-
-.site_header {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  .site_header:last-child {
-    margin-right: 0; }
-
-.clock {
-  font-size: 0.8em;
-  float: right; }
+  .navbar .site_header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    padding: 0 2em; }
+    .navbar .site_header:last-child {
+      margin-right: 0; }
+    .navbar .site_header .japan_time {
+      font-size: 0.7em;
+      float: right; }
 
 /* Weather box styles */
 .container {
   *zoom: 1;
   max-width: 60em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 100%;
+  max-width: 60em; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -69,7 +70,7 @@ p {
 
 /* Top half styles */
 .top_bar {
-  margin-left: -25.58941%;
+  margin-left: -21.751%;
   display: block;
   clear: both; }
 
