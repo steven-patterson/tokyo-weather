@@ -1,10 +1,10 @@
 class WeatherController < ApplicationController
 	def index
-
-		@instagram = Instagram.media_search("36.6148800","138.5813000")
-
 		weather_client = Weatherman::Client.new
 		response = weather_client.lookup_by_woeid 1118370
+
+		rand_num = rand(1000)
+		@instagram = Instagram.media_search("36.61#{rand_num}","138.58#{rand_num}")
 
 		Time.zone = "Tokyo"
 		@tokyo_time = Time.zone.now.strftime("%I:%M %p")
