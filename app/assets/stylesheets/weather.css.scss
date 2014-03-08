@@ -5,6 +5,9 @@
 @import "neat/neat";
 
 $max-width: em(960);
+$primary-color: #FFF;
+$secondary-color: #fff05c;
+$highlight-color: #88dd86;
 
 /* Globals */
 
@@ -22,7 +25,13 @@ body {
 
 p {
 	margin: 0.4em;
-	color: #FFF;
+	color: $primary-color;
+}
+
+.container {
+	@include outer-container;
+	width: 100%;
+	max-width: $max-width;
 }
 
 /* Navbar styles */
@@ -31,11 +40,10 @@ p {
 	@include span-columns(12);
 	padding: 10px 0;
 	margin: 0 0 2% 0;
-	background-color: lighten(#343838, 20);
-	color: #00DFFC;
+	color: $secondary-color;
+	border-bottom: 5px solid $highlight-color;
 	.site_header {
-		@include span-columns(8);
-		@include shift(2);
+		@include span-columns(12);
 		padding: 0 2em;
 		.japan_time {
 			font-size: 0.7em;
@@ -45,12 +53,6 @@ p {
 }
 
 /* Weather box styles */
-
-.container {
-	@include outer-container;
-	width: 100%;
-	max-width: $max-width;
-}
 
 .weather_box {
 	@include span-columns(10);
@@ -80,6 +82,7 @@ p {
 	p {
 		padding-left: 7%;
 		text-align: center;
+		color: $primary-color;
 	}
 }
 
@@ -100,6 +103,9 @@ p {
 	display: block;
 	clear: both;
 	margin-left: 150px;
+	p {
+		color: $primary-color;
+	}
 }
 
 .astronomy {
@@ -132,7 +138,7 @@ p {
 
 .instagram_bar {
 	@include span-columns(10);
-	border-top: 5px solid #00DFFC;
+	border-top: 5px solid $highlight-color;
 	padding-top: 3%;
 	margin-top: 3%;
 	img {

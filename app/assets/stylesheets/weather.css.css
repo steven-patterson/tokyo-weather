@@ -16,34 +16,8 @@ body {
 
 p {
   margin: 0.4em;
-  color: #FFF; }
+  color: white; }
 
-/* Navbar styles */
-.navbar {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  padding: 10px 0;
-  margin: 0 0 2% 0;
-  background-color: #656d6d;
-  color: #00DFFC; }
-  .navbar:last-child {
-    margin-right: 0; }
-  .navbar .site_header {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
-    padding: 0 2em; }
-    .navbar .site_header:last-child {
-      margin-right: 0; }
-    .navbar .site_header .japan_time {
-      font-size: 0.7em;
-      float: right; }
-
-/* Weather box styles */
 .container {
   *zoom: 1;
   max-width: 60em;
@@ -57,6 +31,31 @@ p {
   .container:after {
     clear: both; }
 
+/* Navbar styles */
+.navbar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0 0 2% 0;
+  color: #fff05c;
+  border-bottom: 5px solid #88dd86; }
+  .navbar:last-child {
+    margin-right: 0; }
+  .navbar .site_header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 0 2em; }
+    .navbar .site_header:last-child {
+      margin-right: 0; }
+    .navbar .site_header .japan_time {
+      font-size: 0.7em;
+      float: right; }
+
+/* Weather box styles */
 .weather_box {
   float: left;
   display: block;
@@ -88,7 +87,8 @@ p {
     height: 100px; }
   .conditions p {
     padding-left: 7%;
-    text-align: center; }
+    text-align: center;
+    color: white; }
 
 .weather_icon {
   float: left;
@@ -114,6 +114,8 @@ p {
   margin-left: 150px; }
   .bottom_bar:last-child {
     margin-right: 0; }
+  .bottom_bar p {
+    color: white; }
 
 .astronomy {
   float: left;
@@ -153,7 +155,7 @@ p {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  border-top: 5px solid #00DFFC;
+  border-top: 5px solid #88dd86;
   padding-top: 3%;
   margin-top: 3%; }
   .instagram_bar:last-child {
