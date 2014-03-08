@@ -1,7 +1,7 @@
 class WeatherController < ApplicationController
 	def index
 
-		@instagram = Instagram.media_search("35.6148800","139.5813000")
+		@instagram = Instagram.media_search("36.6148800","138.5813000")
 
 		weather_client = Weatherman::Client.new
 		response = weather_client.lookup_by_woeid 1118370
