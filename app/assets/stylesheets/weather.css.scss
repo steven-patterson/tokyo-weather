@@ -6,6 +6,8 @@
 
 $max-width: em(960);
 
+/* Globals */
+
 html {
 	margin: 0;
 	padding: 0;
@@ -23,17 +25,27 @@ p {
 	color: #FFF;
 }
 
+/* Navbar styles */
+
 .navbar {
 	@include span-columns(12);
 	padding: 10px 5%;
 	margin-bottom: 5%;
 	background-color: lighten(#343838, 20);
 	color: #00DFFC;
-	.clock {
-		font-size: 0.8em;
-		float: right;
-	}
 }
+
+.site_header {
+	@include span-columns(10);
+	@include shift(1);
+}
+
+.clock {
+	font-size: 0.8em;
+	float: right;
+}
+
+/* Weather box styles */
 
 .container {
 	@include outer-container;
@@ -41,10 +53,13 @@ p {
 
 .weather_box {
 	@include span-columns(10);
-	@include shift(2);
+	@include shift(2.25);
 	text-align: center;
 	font-size: 2em;
 }
+
+
+/* Top half styles */
 
 .top_bar {
 	@include shift(-3);
@@ -54,7 +69,7 @@ p {
 
 .conditions {
 	@include span-columns(6);
-	@include shift(4);
+	@include shift(3);
 
 	img {
 		float: left;
@@ -62,8 +77,7 @@ p {
 		height: 100px;
 	}
 	p {
-		padding-top: 0.5em;
-		text-align: left;
+		text-align: center;
 	}
 }
 
@@ -72,15 +86,18 @@ p {
 	@include shift(4);
 	display: block;
 	clear: both;
-	padding-left: 30px;
+	padding-left: 50px;
 }
+
+
+/* Bottom half styles */
 
 .bottom_bar {
 	@include span-columns(10);
 	@include shift(4);
 	display: block;
 	clear: both;
-	margin-left: 110px;
+	margin-left: 150px;
 }
 
 .astronomy {
