@@ -36,6 +36,7 @@ group :design do
 end
 
 gem "yahoo_weatherman"
+gem "instagram"
 
 group :production, :staging do
   gem "pg"

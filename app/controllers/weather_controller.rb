@@ -1,7 +1,10 @@
 class WeatherController < ApplicationController
 	def index
-		client = Weatherman::Client.new
-		response = client.lookup_by_woeid 1118370
+
+		@instagram = Instagram.location_recent_media(514276)
+
+		weather_client = Weatherman::Client.new
+		response = weather_client.lookup_by_woeid 1118370
 
 		Time.zone = "Tokyo"
 		@tokyo_time = Time.zone.now.strftime("%I:%M %p")
