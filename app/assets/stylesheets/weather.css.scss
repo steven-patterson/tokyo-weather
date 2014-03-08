@@ -130,6 +130,7 @@ p {
 
 .instagram_bar {
 	@include span-columns(10);
+	padding-top: 5%;
 	img {
 		float: left;
 		height: 20%;

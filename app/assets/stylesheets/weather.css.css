@@ -150,7 +150,8 @@ p {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%; }
+  width: 82.94039%;
+  padding-top: 5%; }
   .instagram_bar:last-child {
     margin-right: 0; }
   .instagram_bar img {
