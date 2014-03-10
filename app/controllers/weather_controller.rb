@@ -3,7 +3,7 @@ class WeatherController < ApplicationController
 
 		# INSTAGRAM
 		# set these to correspond with your desired location
-		random = rand(1000)
+		random = rand(10000)
 		lat = "35.6#{random}"
 		lng = "139.6#{random}"
 		@tokyo_media = Instagram.media_search(lat, lng)
