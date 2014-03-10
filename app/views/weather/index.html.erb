@@ -24,7 +24,7 @@
 	<div class="instagram_bar">
 	<p>How's life in Tokyo?</p>
 	<br>
-		<% @instagram.take(8).each do |instagram| %>
+		<% @tokyo_media.take(8).each do |instagram| %>
 			<%= link_to instagram.images.standard_resolution.url do %>
 				<%= image_tag instagram.images.standard_resolution.url %>
 			<% end %>

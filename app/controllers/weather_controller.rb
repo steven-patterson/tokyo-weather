@@ -1,10 +1,17 @@
 class WeatherController < ApplicationController
 	def index
+
+		# INSTAGRAM
+		# set these to correspond with your desired location
+		random = rand(1000)
+		lat = "35.6#{random}"
+		lng = "139.6#{random}"
+		@tokyo_media = Instagram.media_search(lat, lng)
+
+
+		# WEATHER
 		weather_client = Weatherman::Client.new
 		response = weather_client.lookup_by_woeid 1118370
-
-		rand_num = rand(1000)
-		@instagram = Instagram.media_search("36.61#{rand_num}","138.58#{rand_num}")
 
 		Time.zone = "Tokyo"
 		@tokyo_time = Time.zone.now.strftime("%I:%M %p")
