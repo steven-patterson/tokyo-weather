@@ -106,6 +106,12 @@ p {
 	p {
 		color: $primary-color;
 	}
+	img {
+		display: inline;
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .astronomy {
@@ -113,12 +119,6 @@ p {
 	@include shift(-3);
 	float: left;
 	text-align: left;
-	img {
-		display: inline;
-		float: left;
-		width: 100px;
-		height: 100px;
-	}
 }
 
 .wind {
@@ -127,12 +127,6 @@ p {
 	float: left;
 	> p {
 		text-align: left;
-	}
-	img {
-		display: inline;
-		float: left;
-		width: 100px;
-		height: 100px;
 	}
 }
 
@@ -146,5 +140,100 @@ p {
 		float: left;
 		height: 25%;
 		width: 25%;
+	}
+}
+
+/* Media Queries */
+
+/* iPhone ====== */
+@include media(max-width 480px) {
+
+	.navbar {
+		.site_header {
+			@include span-columns(8);
+			@include shift(2);
+			text-align: center;
+			.japan_time {
+				font-size: 0.7em;
+				display: block;
+				float: left;
+				text-align: center;
+			}
+		}
+	}
+
+	.conditions {
+		@include span-columns(8);
+		@include shift(2);
+		p {
+			font-size: 0.8em;
+			text-align: center;
+		}
+	}
+
+	.weather_icon {
+		@include span-columns(6);
+		@include shift(2.5);
+	}
+
+	.bottom_bar {
+		@include span-columns(8);
+		@include shift(3);
+		display: block;
+		float: left;
+		img {
+			@include shift(1.5);
+			width: 85%;
+			height: 85%;
+		}
+		p {
+			font-size: 0.7em;
+			text-align: center;
+		}
+	}
+
+	.wind {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+
+	.astronomy {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+
+	#instagram_title {
+		font-size: 0.8em;
+	}
+
+	.instagram_bar {
+		img {
+			@include shift(1.4);
+			height: 75%;
+			width: 75%;
+		}
+	}
+
+}
+
+/* Ancient Phone ====== */
+@include media(max-width 430px) {
+	.navbar {
+		.site_header {
+			font-size: 0.8em;
+			.japan_time {
+				font-size: 0.78em;
+			}
+		}
+	}
+
+	.bottom_bar {
+		font-size: 0.9em;
+	}
+
+	#instagram_title {
+		font-size: 0.75em;
 	}
 }

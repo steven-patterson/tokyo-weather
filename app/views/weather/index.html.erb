@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<div class="instagram_bar">
-	<p>How's life in Tokyo?</p>
+	<p id="instagram_title">How's life in Tokyo?</p>
 	<br>
 		<% @tokyo_media.take(8).each do |instagram| %>
 			<%= link_to instagram.images.standard_resolution.url do %>

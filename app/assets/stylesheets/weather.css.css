@@ -116,6 +116,11 @@ p {
     margin-right: 0; }
   .bottom_bar p {
     color: white; }
+  .bottom_bar img {
+    display: inline;
+    float: left;
+    width: 100px;
+    height: 100px; }
 
 .astronomy {
   float: left;
@@ -127,11 +132,6 @@ p {
   text-align: left; }
   .astronomy:last-child {
     margin-right: 0; }
-  .astronomy img {
-    display: inline;
-    float: left;
-    width: 100px;
-    height: 100px; }
 
 .wind {
   float: left;
@@ -144,11 +144,6 @@ p {
     margin-right: 0; }
   .wind > p {
     text-align: left; }
-  .wind img {
-    display: inline;
-    float: left;
-    width: 100px;
-    height: 100px; }
 
 .instagram_bar {
   float: left;
@@ -165,3 +160,90 @@ p {
     float: left;
     height: 25%;
     width: 25%; }
+
+/* Media Queries */
+/* iPhone ====== */
+@media screen and (max-width: 480px) {
+  .navbar .site_header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    text-align: center; }
+    .navbar .site_header:last-child {
+      margin-right: 0; }
+    .navbar .site_header .japan_time {
+      font-size: 0.7em;
+      display: block;
+      float: left;
+      text-align: center; }
+
+  .conditions {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .conditions:last-child {
+      margin-right: 0; }
+    .conditions p {
+      font-size: 0.8em;
+      text-align: center; }
+
+  .weather_icon {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 21.32451%; }
+    .weather_icon:last-child {
+      margin-right: 0; }
+
+  .bottom_bar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 25.58941%;
+    display: block;
+    float: left; }
+    .bottom_bar:last-child {
+      margin-right: 0; }
+    .bottom_bar img {
+      margin-left: 12.79471%;
+      width: 85%;
+      height: 85%; }
+    .bottom_bar p {
+      font-size: 0.7em;
+      text-align: center; }
+
+  .wind {
+    width: 50%;
+    display: block;
+    float: left; }
+
+  .astronomy {
+    width: 50%;
+    display: block;
+    float: left; }
+
+  #instagram_title {
+    font-size: 0.8em; }
+
+  .instagram_bar img {
+    margin-left: 11.94173%;
+    height: 75%;
+    width: 75%; } }
+/* Ancient Phone ====== */
+@media screen and (max-width: 430px) {
+  .navbar .site_header {
+    font-size: 0.8em; }
+    .navbar .site_header .japan_time {
+      font-size: 0.78em; }
+
+  .bottom_bar {
+    font-size: 0.9em; }
+
+  #instagram_title {
+    font-size: 0.75em; } }
