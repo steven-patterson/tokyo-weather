@@ -174,6 +174,7 @@ p {
     .navbar .site_header:last-child {
       margin-right: 0; }
     .navbar .site_header .japan_time {
+      margin-left: 5.11788%;
       font-size: 0.7em;
       display: block;
       float: left;
